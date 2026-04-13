@@ -21,9 +21,6 @@ export function HomeHero() {
         <PrimaryLink href="/about" tone="ghost">
           About Me
         </PrimaryLink>
-        <PrimaryLink href="/playground" tone="ghost">
-          Playground
-        </PrimaryLink>
       </div>
 
       <div className="mb-10 grid w-full gap-4 md:grid-cols-3">

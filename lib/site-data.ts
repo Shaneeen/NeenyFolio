@@ -15,8 +15,7 @@ export const navItems: NavItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
-  { href: "/experience", label: "Experience" },
-  { href: "/playground", label: "Playground" }
+  { href: "/experience", label: "Experience" }
 ];
 
 export const heroHighlights: HighlightCard[] = [
@@ -28,11 +27,11 @@ export const heroHighlights: HighlightCard[] = [
     tags: ["software", "AI"]
   },
   {
-    label: "Currently building",
-    title: "This portfolio",
+    label: "Currently exploring",
+    title: "Emerging tech",
     description:
-      "Practicing component architecture and turning rough ideas into structured digital products.",
-    tags: ["Next.js", "TypeScript"]
+      "Exploring AI-driven agents and simulation environments to build intelligent, interactive systems.",
+    tags: ["Unreal Engine", "Python","ROS2"]
   },
   {
     label: "What I love",
@@ -44,12 +43,13 @@ export const heroHighlights: HighlightCard[] = [
 ];
 
 export const heroMarquee = [
-  "Building with Next.js",
-  "Tiny details matter",
-  "Shaneen · IT Student",
-  "Software + Systems",
-  "Clean interfaces",
-  "Blush + Sage + Bone"
+"REAL SYSTEMS",
+"AI + SIMULATION",
+"CLEAN INTERFACES",
+"SCALABLE SYSTEMS",
+"FULL-STACK BUILDER",
+"SOFTWARE + DESIGN",
+"INTENTIONAL UX",
 ];
 
 export const projectsFallback: Project[] = [

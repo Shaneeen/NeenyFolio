@@ -193,34 +193,44 @@ export function ExperiencePageContent({
 
       <section className="mt-14">
         <SectionHead title="Featured Events" />
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div className="relative">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center rounded-[28px] bg-cream/30 backdrop-blur-[2px]"
+          >
+            <div className="rounded-full border border-white/80 bg-white/85 px-6 py-2.5 text-sm font-semibold uppercase tracking-[0.16em] text-rust shadow-sm">
+              Coming Soon
+            </div>
+          </div>
+          <div className="grid gap-4 blur-[5px] md:grid-cols-2 xl:grid-cols-3">
           {events.map((event, index) => (
             <GlassCard key={`${event.title}-${event.year}`} className="flex h-full flex-col p-6">
-              <div className="mb-5 flex items-start justify-between gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/55 text-2xl">
-                  {event.icon}
+                <div className="mb-5 flex items-start justify-between gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/55 text-2xl">
+                    {event.icon}
+                  </div>
+                  <div className="text-[11px] font-semibold uppercase tracking-[0.08em] text-muted">
+                    {event.year}
+                  </div>
                 </div>
-                <div className="text-[11px] font-semibold uppercase tracking-[0.08em] text-muted">
-                  {event.year}
+                <div className="mb-2 text-[10px] font-semibold uppercase tracking-[0.09em] text-rust">
+                  {event.category}
                 </div>
-              </div>
-              <div className="mb-2 text-[10px] font-semibold uppercase tracking-[0.09em] text-rust">
-                {event.category}
-              </div>
-              <div className="mb-1 text-lg font-semibold text-ink">{event.title}</div>
-              <div className="mb-3 text-sm text-muted">{event.organization}</div>
-              <p className="mb-4 flex-1 text-sm font-light leading-6 text-muted">
-                {event.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {event.tags.map((tag) => (
-                  <Tag key={tag} tone={index % 2 === 0 ? "rose" : "sage"}>
-                    {tag}
-                  </Tag>
-                ))}
-              </div>
+                <div className="mb-1 text-lg font-semibold text-ink">{event.title}</div>
+                <div className="mb-3 text-sm text-muted">{event.organization}</div>
+                <p className="mb-4 flex-1 text-sm font-light leading-6 text-muted">
+                  {event.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {event.tags.map((tag) => (
+                    <Tag key={tag} tone={index % 2 === 0 ? "rose" : "sage"}>
+                      {tag}
+                    </Tag>
+                  ))}
+                </div>
             </GlassCard>
           ))}
+          </div>
         </div>
       </section>
     </main>
