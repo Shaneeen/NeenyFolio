@@ -5,12 +5,12 @@ export function HomeHero() {
   return (
     <main className="page-shell flex min-h-screen flex-col items-center justify-center">
       <div className="mb-8 inline-flex items-center rounded-full bg-rust/10 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.09em] text-muted">
-        portfolio · software · student vibe
+        Developer · Student · Curious · Growing
       </div>
       <h1 className="text-center font-serif text-[clamp(3.8rem,10vw,7rem)] leading-[0.92] tracking-[-0.04em] text-ink">
         built by
         <br />
-        <em className="text-rust">shaneen</em>
+        <em className="text-rust">Shaneen</em>
       </h1>
       <p className="mt-4 max-w-xl text-center text-[15px] font-light leading-7 text-muted sm:text-base">
         Building thoughtful digital experiences, intelligent systems, and playful little things on the internet.
