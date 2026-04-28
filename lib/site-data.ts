@@ -273,9 +273,9 @@ export const eventsFallback: EventItem[] = [
 export const aboutPanelsFallback: AboutPanel[] = [
   {
     eyebrow: "Who I am",
-    title: "A creative builder in tech",
+    title: "Driven, Curious, and Always Up for a Challenge",
     body:
-      "I'm Shaneen, an IT student who cares deeply about the intersection of software and design. Good interfaces should feel considered, not just functional."
+      "I'm Shaneen, a student who enjoys challenges, learning new things, and turning ideas into something real. I'm competitive in a healthy way, while keeping things fun, playful, and creative."
   },
   {
     eyebrow: "What I build",
